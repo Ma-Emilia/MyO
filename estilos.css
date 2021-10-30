@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-#p-videos, #p-bio, #p-fechas, #p-contacto{
+#p-videos, #p-bio, #p-contacto{
     display: block;
     width: 100%;
     height: 90%;
@@ -13,7 +13,7 @@
     background-image: url("logomyo.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size:cover;   
 }
 #p-fotos{
     display: block;
@@ -46,7 +46,7 @@
 }
 
 #imagen{
-    max-width: 60%;
+    max-width:60%;
     vertical-align: middle;
 }
 
@@ -115,7 +115,7 @@ nav > *:nth-child(1):hover span:nth-child(3)::before{
     background-position: center;
     text-align: justify;
     opacity: 0.90;
-    width: 60%;
+    width: 65%;
     height: fit-content; 
     margin-top: auto;
     margin-left: auto;
@@ -197,6 +197,9 @@ input[type=text], input[type=email],textarea{
     .formulario{width:90%}
     nav {flex-direction: column}
     nav a {width: 100%; height:100%}
+    .p-bio{width: 90%;}
+    #p-bio{background-image: none; background-color: black}
+    #p-contacto{background-color: black;}
 }
 @media only screen and (max-width:576px){
     .contenedorv{width:100%}
@@ -204,6 +207,9 @@ input[type=text], input[type=email],textarea{
     .formulario{width:90%}
     nav {flex-direction: column}
     nav a {width: 100%; height:100%}
+    .p-bio{width: 95%;}
+    #p-bio{background-image: none; background-color: black}
+    #p-contacto{background-color: black;}
 }
 
 footer{
