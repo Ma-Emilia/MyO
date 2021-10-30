@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+#p-videos, #p-bio, #p-fechas, #p-contacto{
+    display: block;
+    width: 100%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Cambria', Georgia, Times, 'Times New Roman', serif; 
+    align-items: center;
+    justify-content: center;
+    background-image: url("logomyo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+#p-fotos{
+    display: block;
+    width: 100%;
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+#p-inicio{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Cambria', Georgia, Times, 'Times New Roman', serif; 
+    background-color:black;   
+}
+#menú{
+    width: 100%;
+    height: 20%;
+    margin: 0; 
+    padding:0;
+    justify-content: left;
+}
+.contimagen{
+    width:100%;
+    height: 100%;
+    text-align: center;
+}
+
+#imagen{
+    max-width: 60%;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+nav a {
+    display: none;
+    width: 10%;
+    padding: 10;
+    font: 'Roboto';
+    font-size: 1.5em;
+    border: 1px solid rgb(247, 201, 201);
+    background: rgb(10, 10, 10);
+    color: rgb(226,105,25);
+    text-align: center;
+    justify-content: center;
+}
+/*ANIMACIÓN EN EL MENÚ*/
+nav:target a{
+    display: block;
+}
+nav > *:nth-child(1){
+    display: block;
+    width: 5em;
+}
+nav > *:nth-child(1) span{
+    position: relative;
+    width: 100%;
+    height: 0.5em;
+    background: rgb(219, 46, 46); 
+}
+nav > *:nth-child(1) span::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(172, 123, 123);
+    transition: width 1s;
+}
+nav > *:nth-child(1):hover span::before{
+    animation: open 1s forwards;
+}
+nav > *:nth-child(1):hover span:nth-child(2)::before{
+    animation-delay: .20s; 
+}
+nav > *:nth-child(1):hover span:nth-child(3)::before{
+    animation-delay: .3s; 
+}
+@keyframes open {
+    0% {width: 0;}
+    100% {width: 100%;} 
+}
+
+.p-bio{
+    display: block;
+    background-color: rgb(148, 220, 253);
+    font-family: 'Roboto', 'Cambria', Georgia, Times, 'Times New Roman', serif; 
+    background-position: center;
+    text-align: justify;
+    opacity: 0.90;
+    width: 60%;
+    height: fit-content; 
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;  
+}
+p{
+    color: rgb(10, 6, 1);
+    font-size: 1.5em;
+    font: 'Roboto';
+}
+.pagvideos{
+    display:flex;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+.contenedorv{
+    position:relative;
+    top:auto;
+    right:auto;
+    bottom: auto;
+    left: auto;
+    overflow:hidden; 
+    width:33.33%;
+    padding-bottom:56.25%;
+    height: fit-content; 
+}
+.iframe-resp{
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width:90%;
+    height: 50%; 
+    border-radius: 10px;   
+}
+
+.responsiveimg{
+    width: 100%;
+    margin-top: 5px;
+}
+.contenedorf{
+    display: flex;
+    padding:5px;
+    flex-wrap: wrap;
+
+}
+.fotcolumna{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.formulario{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin:auto;
+    background-color: rgb(168, 218, 252);
+    opacity:0.8;
+   align-items: center;
+   justify-content: center;
+   font: 'Roboto';
+   font-size: 1.5em;
+}
+#envío{
+    opacity:0;
+}
+input[type=text], input[type=email],textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border:2px solid;
+    border-radius: 2px; 
+}
+@media only screen and (max-width:768px){
+    .contenedorv{width:50%}
+    .fotcolumna{flex:50%}
+    .formulario{width:90%}
+    nav {flex-direction: column}
+    nav a {width: 100%; height:100%}
+}
+@media only screen and (max-width:576px){
+    .contenedorv{width:100%}
+    .fotcolumna{flex:100%}
+    .formulario{width:90%}
+    nav {flex-direction: column}
+    nav a {width: 100%; height:100%}
+}
+
+footer{
+    display: block;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Cambria', Georgia, Times, 'Times New Roman', serif; 
+    text-align: center;    
+}
