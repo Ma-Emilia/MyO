@@ -1,36 +1,40 @@
 * {
     box-sizing: border-box;
 }
+
 #p-videos, #p-bio, #p-contacto{
     display: block;
-    width: 100%;
-    height: 90%;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', 'Cambria', Georgia, Times, 'Times New Roman', serif; 
+    font-family: 'Comfortaa', cursive, 'Josefin Sans', sans-serif;  
     align-items: center;
     justify-content: center;
     background-image: url("logomyo.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size:cover;   
+    background-size:cover; 
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(253, 84, 5));
+    
 }
+
 #p-fotos{
-    display: block;
-    width: 100%;
-    height: 90%;
-    margin: 0;
-    padding: 0;
-    background-color: #000;
-}
-#p-inicio{
     display: block;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', 'Cambria', Georgia, Times, 'Times New Roman', serif; 
-    background-color:black;   
+    font-family: 'Comfortaa', cursive, 'Josefin Sans', sans-serif; 
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(253, 84, 5));
+}
+#p-inicio{
+    display: block;
+    min-width: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive, 'Josefin Sans', sans-serif; 
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(253, 84, 5));   
 }
 #menú{
     width: 100%;
@@ -40,9 +44,8 @@
     justify-content: left;
 }
 .contimagen{
-    width:100%;
-    height: 100%;
     text-align: center;
+    display:block;
 }
 
 #imagen{
@@ -60,9 +63,9 @@ nav {
 }
 nav a {
     display: none;
-    width: 10%;
-    padding: 10;
-    font: 'Roboto';
+    width: 15%;
+    padding: 1%;
+    font: 'Comfortaa', cursive, 'Josefin Sans', sans-serif;
     font-size: 1.5em;
     border: 1px solid rgb(247, 201, 201);
     background: rgb(10, 10, 10);
@@ -111,7 +114,7 @@ nav > *:nth-child(1):hover span:nth-child(3)::before{
 .p-bio{
     display: block;
     background-color: rgb(148, 220, 253);
-    font-family: 'Roboto', 'Cambria', Georgia, Times, 'Times New Roman', serif; 
+    font-family: 'Comfortaa', cursive, 'Josefin Sans', sans-serif;
     background-position: center;
     text-align: justify;
     opacity: 0.90;
@@ -120,7 +123,8 @@ nav > *:nth-child(1):hover span:nth-child(3)::before{
     margin-top: auto;
     margin-left: auto;
     margin-bottom: auto;
-    margin-right: auto;  
+    margin-right: auto; 
+    padding: 3%; 
 }
 p{
     color: rgb(10, 6, 1);
@@ -131,7 +135,7 @@ p{
     display:flex;
     width: 100%;
     height: fit-content;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 .contenedorv{
     position:relative;
@@ -172,14 +176,15 @@ p{
 
 .formulario{
     display: flex;
-    width: 50%;
+    width: 60%;
     height: 100%;
     margin:auto;
+    padding: 2%;
     background-color: rgb(168, 218, 252);
     opacity:0.8;
    align-items: center;
    justify-content: center;
-   font: 'Roboto';
+   font-family:  'Comfortaa', cursive, 'Josefin Sans', sans-serif;
    font-size: 1.5em;
 }
 #envío{
@@ -218,6 +223,6 @@ footer{
     height: 10%;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', 'Cambria', Georgia, Times, 'Times New Roman', serif; 
+    font-family: 'Comfortaa', cursive, 'Josefin Sans', sans-serif; 
     text-align: center;    
 }
