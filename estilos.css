@@ -34,7 +34,21 @@
     margin: 0;
     padding: 0;
     font-family: 'Comfortaa', cursive, 'Josefin Sans', sans-serif; 
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(253, 84, 5));   
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(253, 84, 5)); 
+    background-repeat: no-repeat; 
+    background-size:cover;  
+}
+.nombre{
+    display: block;
+    font-family: 'Comfortaa', cursive, 'Josefin Sans', sans-serif;
+    background-color: rgb(77, 76, 76);
+}
+h1{
+    color: aqua;
+    background-position: center;
+    text-align: center; 
 }
 #menú{
     width: 100%;
@@ -46,10 +60,11 @@
 .contimagen{
     text-align: center;
     display:block;
+    max-height: 100vh;
 }
 
 #imagen{
-    max-width:60%;
+    max-width: 60%;
     vertical-align: middle;
 }
 
