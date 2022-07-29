@@ -1,10 +1,10 @@
 function validacion(){
     var nombre = document.getElementById("nombre").value;
-    var email = document.getElementById("email").value;
+    var telefono = document.getElementById("telefono").value;
     var asunto = document.getElementById("asunto").value;
     var benvio = document.getElementById("boton1");
     var bconfirmar = document.getElementById("boton2");
-    if(nombre == "" || email == "" || asunto == ""){
+    if(nombre == "" || telefono == "" || asunto == ""){
         alert("Por favor, completa todos los campos señalados con asterisco");
         return false;
     } 
