@@ -211,8 +211,25 @@ p{
    font-family:  'Comfortaa', cursive, 'Josefin Sans', sans-serif;
    font-size: 1.5em;
 }
-#envío{
+/*#envío{
     opacity:0;
+}*/
+#boton1{
+    display:block;
+    box-sizing: border-box;
+    border:2px solid;
+    border-radius: 2px;
+    border-color: black;
+}
+#boton2{
+    display:none;
+    align-items: center;
+    width:70%;
+    height:40px;
+    box-sizing: border-box;
+    border:2px solid;
+    border-radius: 2px;
+    border-color: red;
 }
 input[type=text], input[type=email],textarea{
     width: 100%;

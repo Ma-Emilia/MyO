@@ -8,9 +8,9 @@
         <meta name="description" content="Web oficial de Martín y Oky, bio, videos, presentaciones y más.">
         <title>Martín y Oky - Oficial</title>
         <link rel="stylesheet" type="text/css" href="estilos.css" />
-        <link href = "https: //fonts.googleapis.com/css2? family = Roboto & display = swap "rel =" stylesheet ">    
+        <link href ="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <script language="javascript" src="js/validacion.js"></script>
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Josefin+Sans:wght@300&family=Licorice&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@
         </div>
 
         <div class="formulario">
-            <form id="form" method="post" class="form" onsubmit="return validacion();">
+            <form id="form" action="https://formspree.io/f/xqkjzzpg" method="POST" class="form">
                 <label for="nombre">Nombre*</label><br>
                 <input type="text" id="nombre" name="nombre" size="60" maxlength="15"><br>
                 <label for="email">E-mail*</label><br>
@@ -45,13 +45,13 @@
                 <label for="asunto">Asunto*</label><br>
                 <input type="text" id="asunto" name="asunto" size="60" maxlength="15"><br>
                 <label for="comentario">Mensaje</label><br>
-                <textarea name="comentario" rows="15" cols="60">Escribe tu mensaje...</textarea><br>
-                <input type="submit" value="ENVIAR">
-
+                <textarea name="comentario" rows="15" cols="60"></textarea><br>
+                <button type="button" id="boton1" onclick="validacion() ">ENVIAR</button>
+                <button type="submit" id="boton2" onsubmit="handleSubmit(event)">CONFIRMAR</button> 
             </form> 
-            <a href="mailto:mariaemilialeguizamon@gmail.com" id="envío">mail</a>
         </div>
         
+        <script language="javascript" src="js/validacion.js"></script>
 
     </body>
 
